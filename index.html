@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>美熙乐学 · 知识花园</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">美熙乐学</p>
+          <h1>把每一篇文章变成自己的知识花园</h1>
+          <p class="hero-text">整理你所有的文章、随笔、笔记与科普内容，让阅读更温润、有序、易查找。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#articles">查看文章</a>
+            <a class="button secondary" href="#guide">编辑说明</a>
+          </div>
+          <div class="hero-cover-note">
+            封面图建议尺寸：900 × 500，微信公众号封面图建议 900 × 383。
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-banner">
+            <div class="banner-copy">
+              <span>美熙乐学</span>
+              <h2>用封面图定义你的每一篇文章</h2>
+              <p>替换下面的长图或文章封面，呈现你自己的品牌风格。</p>
+            </div>
+          </div>
+          <div class="hero-banner-note">长图建议 900×500，公众号封面建议 900×383，直接替换 `styles.css` 中背景图即可。</div>
+        </div>
+      </header>
+
+      <section id="articles" class="section articles-section">
+        <div class="section-header">
+          <div>
+            <p class="section-eyebrow">文章集锦</p>
+            <h2>你的全部文章，像书架一样排列</h2>
+          </div>
+          <div class="filter-bar">
+            <input id="searchInput" type="search" placeholder="搜索标题、关键词、分类" />
+          </div>
+        </div>
+        <div id="articlesList" class="card-grid"></div>
+      </section>
+
+      <section id="guide" class="section guide-section">
+        <div class="guide-card">
+          <h2>怎样添加文章</h2>
+          <ol>
+            <li>打开 <code>articles.js</code>。</li>
+            <li>把你的文章按示例填入 <code>articles</code> 数组，推荐字段：<code>title</code>、<code>description</code>、<code>category</code>、<code>date</code>、<code>cover</code>、<code>url</code>。</li>
+            <li>如果你想替换封面图，直接修改 <code>cover</code> 地址；建议尺寸 900×500，微信公众号封面建议 900×383。</li>
+            <li>保存后刷新页面即可看到更新。</li>
+          </ol>
+          <p>你也可以把文章链接换成自己的博客、微信公众号文章、Notion 或任何外链。</p>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p>美熙乐学 · 你的知识呈现空间</p>
+      </footer>
+    </div>
+    <script src="articles.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
